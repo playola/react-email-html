@@ -13,7 +13,7 @@ const Header = ({ children, align }) => (
 );
 
 Header.propTypes = {
-  children: PropTypes.oneOf([
+  children: PropTypes.oneOfType([
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node),
   ]).isRequired,

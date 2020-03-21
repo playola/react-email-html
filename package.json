@@ -9,7 +9,9 @@
     "build": "rollup --config",
     "dev": "rollup --config --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pretest": "npm run build"
+    "pretest": "npm run build",
+    "storybook": "start-storybook -s ./assets -p 6006",
+    "build-storybook": "build-storybook -s ./assets"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
@@ -23,6 +25,13 @@
     "@babel/preset-react": "^7.9.1",
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
+    "@storybook/addon-actions": "^5.3.17",
+    "@storybook/addon-docs": "^5.3.17",
+    "@storybook/addon-info": "^5.3.17",
+    "@storybook/addon-links": "^5.3.17",
+    "@storybook/addons": "^5.3.17",
+    "@storybook/react": "^5.3.17",
+    "babel-loader": "^8.1.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.20.1",
