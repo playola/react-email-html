@@ -1,0 +1,35 @@
+{
+  "name": "react-email-html",
+  "version": "0.0.1",
+  "description": "React email html components",
+  "author": "playola",
+  "license": "ISC",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "rollup --config",
+    "dev": "rollup --config --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretest": "npm run build"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.1",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "rollup": "^2.1.0",
+    "rollup-plugin-babel": "^4.4.0"
+  }
+}
