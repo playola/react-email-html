@@ -18,4 +18,6 @@ jobs:
           npm run build-storybook
 
       - name: Deploy 🚀
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_ACTIONS_TOKEN }}
         run: npm run deploy-storybook
