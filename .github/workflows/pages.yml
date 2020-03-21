@@ -19,7 +19,3 @@ jobs:
 
       - name: Deploy 🚀
         run: npm run deploy-storybook
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_ACTIONS }}
-          BRANCH: gh-pages
-          FOLDER: build-storybook
