@@ -15,11 +15,11 @@ jobs:
       - name: Build
       - run: |
         npm install
-        npm run storybook-build
+        npm run build-storybook
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_ACTIONS }}
           BRANCH: gh-pages
-          FOLDER: build
+          FOLDER: build-storybook

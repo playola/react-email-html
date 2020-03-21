@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "pretest": "npm run build",
     "storybook": "start-storybook -s ./assets -p 6006",
-    "build-storybook": "build-storybook -s ./assets"
+    "build-storybook": "build-storybook -s ./assets -c .storybook -o build-storybook"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
