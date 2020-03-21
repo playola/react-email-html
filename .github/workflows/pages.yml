@@ -12,10 +12,11 @@ jobs:
       - name: Checkout
       - uses: actions/checkout@v1
 
+      - name: Install Dependencies
+      - run: npm install
+
       - name: Build
-      - run: |
-        npm install
-        npm run build-storybook
+      - run: npm run build-storybook
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
