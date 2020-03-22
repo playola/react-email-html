@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Install and Build 🔧
         run: |
@@ -18,6 +18,6 @@ jobs:
           npm run build-storybook
 
       - name: Deploy 🚀
-        uses: ../actions/gh-pages-deploy # Uses the action in the root directory
+        uses: .github/actions/gh-pages-deploy # Uses the action in the root directory
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_ACTIONS_TOKEN }}
