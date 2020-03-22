@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { buttonData, buttonLink } from './Button.styles';
 
-const Button = ({ children, align }) => (
+const Button = ({ children, align, linkTo }) => (
   <tr width="100%">
     <td style={buttonData} align={align}>
       <a
         style={buttonLink}
-        href="https://playolaizq.com"
+        href={linkTo || '#'}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -25,10 +25,12 @@ Button.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
   ]).isRequired,
   align: PropTypes.oneOf(['left', 'center', 'right']),
+  linkTo: PropTypes.string,
 };
 
 Button.defaultProps = {
   align: 'left',
+  linkTo: null,
 };
 
 export default Button;

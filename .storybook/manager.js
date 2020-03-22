@@ -10,8 +10,11 @@ const customTheme = create({
   brandUrl: 'https://github.com/playola/react-email-html',
 });
 
+/**
+ * @see https://storybook.js.org/docs/configurations/options-parameter/
+ */
 addons.setConfig({
   theme: customTheme,
   panelPosition: 'bottom',
-  // isToolshown: true,
+  showPanel: false,
 });

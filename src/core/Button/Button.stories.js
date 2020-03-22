@@ -7,7 +7,7 @@ export default {
 };
 
 export const Default = () => (
-  <Button>
+  <Button linkTo="https://playolaizq.com">
     Click me
   </Button>
 );
