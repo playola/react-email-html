@@ -8,7 +8,6 @@
   "scripts": {
     "build": "rollup --config",
     "dev": "rollup --config --watch",
-    "test": "npm test temporarily disabled",
     "lint": "eslint 'src/**/*.{js,jsx}'",
     "storybook": "start-storybook -s ./assets -p 6006",
     "build-storybook": "build-storybook -s ./assets -c .storybook -o build-storybook"

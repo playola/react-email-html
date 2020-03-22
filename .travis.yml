@@ -5,6 +5,8 @@ cache:
   directories:
     - node_modules
 
+script: npm test temporarily disabled
+
 before_deploy:
   - "npm run build-storybook"
 
