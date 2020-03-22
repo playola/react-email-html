@@ -18,6 +18,8 @@ jobs:
           npm run build-storybook
 
       - name: Deploy 🚀
-        uses: ./.github/actions/gh-pages-deploy
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: |
+        git config --global user.email "playolaizq@gmail.com>"
+        git config --global user.name "playola>"
+        git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/playola/react-email-html.git
+        npm run deploy-storybook

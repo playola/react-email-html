@@ -10,7 +10,7 @@
   </p>
   <p>
     <b>
-      <a href="https://github.com/playola/react-email-html">
+      <a href="https://playola.github.io/react-email-html/">
         See documentation here
       </a>
     </b>
