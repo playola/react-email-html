@@ -19,7 +19,8 @@ const SORT_ORDER = {
     'Usage',
     'CI-CD',
   ],
-  Components: [],
+  Core: [],
+  Templates: [],
 };
 
 addParameters({
